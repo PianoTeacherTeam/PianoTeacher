@@ -1,0 +1,16 @@
+﻿<Application x:Class="PianoTeacher.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:pdfwValueConvertes="http://datasel.com.tr/pdfw"
+             xmlns:app="clr-namespace:PianoTeacher"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>        
+        <pdfwValueConvertes:EmptyStringToBooleanValueConverter x:Key="emptyStringToBooleanValueConverter" />
+        <pdfwValueConvertes:EmptyStringToVisibilityValueConverter x:Key="emptyStringToVisibilityValueConverter" />
+
+        <pdfwValueConvertes:BoolToVisibilityValueConverter x:Key="boolToVisibilityValueConverter" />
+        <app:NumberToVisibilityValueConverter x:Key="numberToVisibilityValueConverter" />
+        
+        <pdfwValueConvertes:EmptyStringToVisibilityValueConverter x:Key="emptyStringToVisibilityValueConverterReverse" IsReverse="True" />
+    </Application.Resources>
+</Application>
